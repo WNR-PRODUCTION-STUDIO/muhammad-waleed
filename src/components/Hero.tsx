@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ChevronDown, Download, Github, Mail } from 'lucide-react';
 const Hero = () => {
@@ -72,7 +71,7 @@ const Hero = () => {
 
           {/* Right content - Enhanced Profile Image */}
           <div className="flex justify-center lg:justify-end rounded-lg">
-            <div className="relative w-96 h-96">
+            <div className="relative w-96 h-96 bg-inherit rounded-xl">
               {/* Multiple glow layers for enhanced lighting */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-green-500/30 rounded-full blur-3xl animate-pulse"></div>
               <div className="absolute inset-2 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full blur-2xl animate-pulse" style={{
