@@ -88,10 +88,10 @@ const Skills = () => {
                     </div>
                     <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
                       <div
-                        className={`h-full bg-gradient-to-r ${category.color} rounded-full transition-all duration-1000 ease-out`}
+                        className={`h-full bg-gradient-to-r ${category.color} rounded-full animate-skill-bar`}
                         style={{
                           width: `${skill.level}%`,
-                          animation: `slideIn 1.5s ease-out ${skillIndex * 0.1}s both`
+                          animationDelay: `${skillIndex * 0.1}s`
                         }}
                       ></div>
                     </div>
@@ -102,17 +102,6 @@ const Skills = () => {
           ))}
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes slideIn {
-          from {
-            width: 0%;
-          }
-          to {
-            width: var(--final-width);
-          }
-        }
-      `}</style>
     </section>
   );
 };
