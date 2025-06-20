@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ChevronDown, Download, Github, Mail } from 'lucide-react';
 const Hero = () => {
@@ -35,9 +36,9 @@ const Hero = () => {
               </h1>
               
               <div className="text-xl sm:text-2xl text-gray-300 font-light">
-                <span className="text-blue-400">Embedded Systems Developer</span>
+                <span className="text-blue-400">Founder of WNR Productions Studio</span>
                 <span className="text-gray-500"> | </span>
-                <span className="text-green-400">C++ Programmer</span>
+                <span className="text-green-400">Embedded Systems Developer</span>
                 <span className="text-gray-500"> | </span>
                 <span className="text-purple-400">Designer</span>
               </div>
@@ -91,7 +92,7 @@ const Hero = () => {
                 <div className="absolute inset-2 bg-gradient-to-br from-blue-500/10 to-green-500/10 rounded-full"></div>
                 
                 {/* Profile image */}
-                <img src="https://i.postimg.cc/4x32qZqW/d0e3039e-484e-46f5-99d3-e427d693d821.png" alt="Muhammad Waleed" className="w-full h-full object-cover rounded-full relative z-10" />
+                <img src="https://i.postimg.cc/jjQHTq2p/Black.png" alt="Muhammad Waleed - Founder of WNR Productions Studio" className="w-full h-full object-cover rounded-full relative z-10" />
                 
                 {/* Highlight overlay for professional lighting */}
                 <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-white/10 to-transparent rounded-full"></div>

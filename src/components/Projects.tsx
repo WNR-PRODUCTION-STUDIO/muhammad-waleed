@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Github, Settings, Code, Image, ArrowRight } from 'lucide-react';
 
@@ -12,7 +11,7 @@ const Projects = () => {
       image: '/placeholder.svg',
       technologies: ['Arduino', 'C++', 'Electronics', 'Multiplexing'],
       category: 'Hardware',
-      github: 'https://github.com/W-N-R/led-cube',
+      github: 'https://github.com/W-N-R/My-Electronics-Embedded-Systems-Project-Hub-/tree/main/4%20X%204%20X%204_MATRIX_Ardiuno%20nano%20project',
       features: ['64 individual LEDs', 'Custom animation patterns', 'Real-time control', 'Efficient multiplexing']
     },
     {
@@ -21,7 +20,7 @@ const Projects = () => {
       image: '/placeholder.svg',
       technologies: ['C++', 'Qt', 'Database', 'OOP'],
       category: 'Software',
-      github: 'https://github.com/W-N-R/car-showroom',
+      github: 'https://github.com/W-N-R/-Car-Showroom-Sales-System-C-',
       features: ['Inventory management', 'Sales tracking', 'Customer database', 'Financial reports']
     },
     {
@@ -48,7 +47,7 @@ const Projects = () => {
       image: '/placeholder.svg',
       technologies: ['Arduino', 'IoT', 'Sensors', 'Mobile App'],
       category: 'Hardware',
-      github: 'https://github.com/W-N-R/automation-hub',
+      github: 'https://github.com/W-N-R/My-Electronics-Embedded-Systems-Project-Hub-',
       features: ['IoT connectivity', 'Sensor integration', 'Remote control', 'Data logging']
     },
     {
