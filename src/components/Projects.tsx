@@ -104,7 +104,7 @@ const Projects = () => {
               {/* Project Image */}
               <div className="relative h-48 bg-gradient-to-br from-gray-800 to-gray-900 overflow-hidden">
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-none px-0 mx-0 bg-gray-900">
+                <div className="absolute inset-0 opacity-20 group-hover:opacity-100 duration-300 flex items-center justify-center rounded-none px-0 mx-0 bg-gray-900">
                   <div className="flex space-x-4">
                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors duration-300">
                       <Github className="w-6 h-6 text-white" />
