@@ -1,20 +1,25 @@
-
 import React from 'react';
 import { ChevronDown, Download, Github, Mail } from 'lucide-react';
-
 const Hero = () => {
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative pt-16 bg-gradient-to-br from-gray-900 via-black to-gray-800">
+  return <section id="home" className="min-h-screen flex items-center justify-center relative pt-16 bg-gradient-to-br from-gray-900 via-black to-gray-800">
       {/* Background animation elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-green-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-green-500/10 rounded-full blur-3xl animate-pulse" style={{
+        animationDelay: '1s'
+      }}></div>
         
         {/* Floating geometric elements */}
         <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-blue-500 rounded-full animate-bounce"></div>
-        <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
-        <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-purple-500 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-2/3 right-1/4 w-2 h-2 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{
+        animationDelay: '0.5s'
+      }}></div>
+        <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-purple-500 rounded-full animate-bounce" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute top-2/3 right-1/4 w-2 h-2 bg-blue-400 rounded-full animate-bounce" style={{
+        animationDelay: '1.5s'
+      }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -45,46 +50,36 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a
-                href="#projects"
-                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
-              >
+              <a href="#projects" className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
                 View Portfolio
               </a>
-              <a
-                href="#contact"
-                className="px-8 py-4 bg-gray-800 text-white rounded-xl font-semibold border border-gray-700 hover:bg-gray-700 transition-all duration-300 hover:scale-105 flex items-center gap-2"
-              >
+              <a href="#contact" className="px-8 py-4 bg-gray-800 text-white rounded-xl font-semibold border border-gray-700 hover:bg-gray-700 transition-all duration-300 hover:scale-105 flex items-center gap-2">
                 <Download size={20} />
                 Download Resume
               </a>
             </div>
 
             <div className="flex gap-6 justify-center lg:justify-start">
-              <a
-                href="https://github.com/W-N-R"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-gray-800/50 rounded-full border border-gray-700 hover:border-blue-500 hover:bg-blue-500/10 transition-all duration-300 group"
-              >
+              <a href="https://github.com/W-N-R" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800/50 rounded-full border border-gray-700 hover:border-blue-500 hover:bg-blue-500/10 transition-all duration-300 group">
                 <Github size={24} className="text-gray-400 group-hover:text-blue-400" />
               </a>
-              <a
-                href="mailto:waleednaeem133@gmail.com"
-                className="p-3 bg-gray-800/50 rounded-full border border-gray-700 hover:border-green-500 hover:bg-green-500/10 transition-all duration-300 group"
-              >
+              <a href="mailto:waleednaeem133@gmail.com" className="p-3 bg-gray-800/50 rounded-full border border-gray-700 hover:border-green-500 hover:bg-green-500/10 transition-all duration-300 group">
                 <Mail size={24} className="text-gray-400 group-hover:text-green-400" />
               </a>
             </div>
           </div>
 
           {/* Right content - Enhanced Profile Image */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end rounded-lg">
             <div className="relative w-96 h-96">
               {/* Multiple glow layers for enhanced lighting */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-green-500/30 rounded-full blur-3xl animate-pulse"></div>
-              <div className="absolute inset-2 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-              <div className="absolute inset-4 bg-gradient-to-tl from-green-500/25 to-cyan-500/25 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+              <div className="absolute inset-2 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full blur-2xl animate-pulse" style={{
+              animationDelay: '0.5s'
+            }}></div>
+              <div className="absolute inset-4 bg-gradient-to-tl from-green-500/25 to-cyan-500/25 rounded-full blur-xl animate-pulse" style={{
+              animationDelay: '1s'
+            }}></div>
               
               {/* Rim lighting effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400/20 to-transparent rounded-full"></div>
@@ -96,11 +91,7 @@ const Hero = () => {
                 <div className="absolute inset-2 bg-gradient-to-br from-blue-500/10 to-green-500/10 rounded-full"></div>
                 
                 {/* Profile image */}
-                <img
-                  src="https://i.postimg.cc/4x32qZqW/d0e3039e-484e-46f5-99d3-e427d693d821.png"
-                  alt="Muhammad Waleed"
-                  className="w-full h-full object-cover rounded-full relative z-10"
-                />
+                <img src="https://i.postimg.cc/4x32qZqW/d0e3039e-484e-46f5-99d3-e427d693d821.png" alt="Muhammad Waleed" className="w-full h-full object-cover rounded-full relative z-10" />
                 
                 {/* Highlight overlay for professional lighting */}
                 <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-white/10 to-transparent rounded-full"></div>
@@ -109,8 +100,12 @@ const Hero = () => {
               
               {/* Floating accent elements */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full animate-bounce shadow-lg shadow-blue-500/50"></div>
-              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-green-500 rounded-full animate-bounce shadow-lg shadow-green-500/50" style={{ animationDelay: '0.5s' }}></div>
-              <div className="absolute top-1/2 -left-6 w-4 h-4 bg-purple-500 rounded-full animate-bounce shadow-lg shadow-purple-500/50" style={{ animationDelay: '1s' }}></div>
+              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-green-500 rounded-full animate-bounce shadow-lg shadow-green-500/50" style={{
+              animationDelay: '0.5s'
+            }}></div>
+              <div className="absolute top-1/2 -left-6 w-4 h-4 bg-purple-500 rounded-full animate-bounce shadow-lg shadow-purple-500/50" style={{
+              animationDelay: '1s'
+            }}></div>
             </div>
           </div>
         </div>
@@ -120,8 +115,6 @@ const Hero = () => {
           <ChevronDown size={32} />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
