@@ -10,20 +10,11 @@ const Hero = () => {
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-green-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         
-        {/* Spinning wheel animations */}
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 border-2 border-blue-500/20 rounded-full animate-spin-slow">
-          <div className="absolute top-2 left-2 w-4 h-4 bg-blue-500 rounded-full"></div>
-          <div className="absolute bottom-2 right-2 w-3 h-3 bg-green-500 rounded-full"></div>
-        </div>
-        
-        <div className="absolute top-3/4 right-1/4 w-24 h-24 border border-green-500/30 rounded-full animate-spin" style={{ animationDirection: 'reverse', animationDuration: '8s' }}>
-          <div className="absolute top-1 right-1 w-2 h-2 bg-purple-500 rounded-full"></div>
-          <div className="absolute bottom-1 left-1 w-3 h-3 bg-blue-500 rounded-full"></div>
-        </div>
-        
-        <div className="absolute top-1/2 right-1/3 w-16 h-16 border border-purple-500/40 rounded-full animate-spin-slow" style={{ animationDelay: '2s' }}>
-          <div className="absolute top-0 left-1/2 w-2 h-2 bg-green-500 rounded-full transform -translate-x-1/2"></div>
-        </div>
+        {/* Floating geometric elements */}
+        <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-blue-500 rounded-full animate-bounce"></div>
+        <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-purple-500 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-2/3 right-1/4 w-2 h-2 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -87,29 +78,39 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right content - Profile Image */}
+          {/* Right content - Enhanced Profile Image */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              {/* Spinning rings around profile */}
-              <div className="absolute inset-0 w-96 h-96 border border-blue-500/20 rounded-full animate-spin-slow"></div>
-              <div className="absolute inset-4 w-88 h-88 border border-green-500/30 rounded-full animate-spin" style={{ animationDirection: 'reverse', animationDuration: '10s' }}></div>
-              <div className="absolute inset-8 w-80 h-80 border border-purple-500/20 rounded-full animate-spin-slow" style={{ animationDelay: '1s' }}></div>
+            <div className="relative w-96 h-96">
+              {/* Multiple glow layers for enhanced lighting */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-green-500/30 rounded-full blur-3xl animate-pulse"></div>
+              <div className="absolute inset-2 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+              <div className="absolute inset-4 bg-gradient-to-tl from-green-500/25 to-cyan-500/25 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div>
               
-              {/* Glow effect behind image */}
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-green-500/20 rounded-2xl blur-2xl transform scale-110"></div>
+              {/* Rim lighting effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400/20 to-transparent rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-400/15 to-transparent rounded-full"></div>
               
-              {/* Profile image container */}
-              <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 backdrop-blur-sm">
+              {/* Profile image container with enhanced lighting */}
+              <div className="relative w-full h-full bg-gradient-to-br from-gray-800/80 to-gray-900/80 rounded-full border-2 border-gray-700/50 backdrop-blur-sm overflow-hidden">
+                {/* Inner glow */}
+                <div className="absolute inset-2 bg-gradient-to-br from-blue-500/10 to-green-500/10 rounded-full"></div>
+                
+                {/* Profile image */}
                 <img
-                  src="/lovable-uploads/3c4324c2-3b8d-46c3-b1d6-5b9dd41b9555.png"
+                  src="https://i.postimg.cc/4x32qZqW/d0e3039e-484e-46f5-99d3-e427d693d821.png"
                   alt="Muhammad Waleed"
-                  className="w-80 h-80 object-cover rounded-xl shadow-2xl"
+                  className="w-full h-full object-cover rounded-full relative z-10"
                 />
                 
-                {/* Floating elements */}
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full animate-bounce"></div>
-                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+                {/* Highlight overlay for professional lighting */}
+                <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-white/10 to-transparent rounded-full"></div>
+                <div className="absolute top-1/4 right-0 w-1/3 h-1/2 bg-gradient-to-l from-blue-400/15 to-transparent rounded-full"></div>
               </div>
+              
+              {/* Floating accent elements */}
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full animate-bounce shadow-lg shadow-blue-500/50"></div>
+              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-green-500 rounded-full animate-bounce shadow-lg shadow-green-500/50" style={{ animationDelay: '0.5s' }}></div>
+              <div className="absolute top-1/2 -left-6 w-4 h-4 bg-purple-500 rounded-full animate-bounce shadow-lg shadow-purple-500/50" style={{ animationDelay: '1s' }}></div>
             </div>
           </div>
         </div>
