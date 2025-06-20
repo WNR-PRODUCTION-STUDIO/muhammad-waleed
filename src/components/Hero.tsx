@@ -100,9 +100,9 @@ const Hero = () => {
               
               {/* Floating accent elements */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full animate-bounce shadow-lg shadow-blue-500/50"></div>
-              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-green-500 rounded-full animate-bounce shadow-lg shadow-green-500/50" style={{
+              <div style={{
               animationDelay: '0.5s'
-            }}></div>
+            }} className="absolute -bottom-4 -left-4 w-6 h-6 rounded-full animate-bounce shadow-lg shadow-green-500/50 bg-green-500 py-[25px] px-[25px]"></div>
               <div className="absolute top-1/2 -left-6 w-4 h-4 bg-purple-500 rounded-full animate-bounce shadow-lg shadow-purple-500/50" style={{
               animationDelay: '1s'
             }}></div>
