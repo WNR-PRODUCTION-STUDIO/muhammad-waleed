@@ -9,6 +9,21 @@ const Hero = () => {
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-green-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        
+        {/* Spinning wheel animations */}
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 border-2 border-blue-500/20 rounded-full animate-spin-slow">
+          <div className="absolute top-2 left-2 w-4 h-4 bg-blue-500 rounded-full"></div>
+          <div className="absolute bottom-2 right-2 w-3 h-3 bg-green-500 rounded-full"></div>
+        </div>
+        
+        <div className="absolute top-3/4 right-1/4 w-24 h-24 border border-green-500/30 rounded-full animate-spin" style={{ animationDirection: 'reverse', animationDuration: '8s' }}>
+          <div className="absolute top-1 right-1 w-2 h-2 bg-purple-500 rounded-full"></div>
+          <div className="absolute bottom-1 left-1 w-3 h-3 bg-blue-500 rounded-full"></div>
+        </div>
+        
+        <div className="absolute top-1/2 right-1/3 w-16 h-16 border border-purple-500/40 rounded-full animate-spin-slow" style={{ animationDelay: '2s' }}>
+          <div className="absolute top-0 left-1/2 w-2 h-2 bg-green-500 rounded-full transform -translate-x-1/2"></div>
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -75,6 +90,11 @@ const Hero = () => {
           {/* Right content - Profile Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
+              {/* Spinning rings around profile */}
+              <div className="absolute inset-0 w-96 h-96 border border-blue-500/20 rounded-full animate-spin-slow"></div>
+              <div className="absolute inset-4 w-88 h-88 border border-green-500/30 rounded-full animate-spin" style={{ animationDirection: 'reverse', animationDuration: '10s' }}></div>
+              <div className="absolute inset-8 w-80 h-80 border border-purple-500/20 rounded-full animate-spin-slow" style={{ animationDelay: '1s' }}></div>
+              
               {/* Glow effect behind image */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-green-500/20 rounded-2xl blur-2xl transform scale-110"></div>
               
