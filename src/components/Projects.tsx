@@ -1,54 +1,60 @@
 import React, { useState } from 'react';
 import { Github, Settings, Code, Image, ArrowRight } from 'lucide-react';
+import ledCubeImg from '../assets/led-cube-project.jpg';
+import carShowroomImg from '../assets/car-showroom-system.jpg';
+import logoCollectionImg from '../assets/logo-collection.jpg';
+import webProjectsImg from '../assets/web-projects.jpg';
+import arduinoAutomationImg from '../assets/arduino-automation.jpg';
+import animationImg from '../assets/3d-animation.jpg';
 const Projects = () => {
   const [filter, setFilter] = useState('All');
   const projects = [{
     title: '4x4x4 LED Cube Display',
     description: 'Arduino Nano-based LED cube with multiplexing control, featuring dynamic light patterns and animations.',
-    image: '/placeholder.svg',
+    image: ledCubeImg,
     technologies: ['Arduino', 'C++', 'Electronics', 'Multiplexing'],
     category: 'Hardware',
-    github: 'https://github.com/W-N-R/My-Electronics-Embedded-Systems-Project-Hub-/tree/main/4%20X%204%20X%204_MATRIX_Ardiuno%20nano%20project',
+    github: 'https://github.com/WNR-Official/My-Electronics-Embedded-Systems-Project-Hub-/tree/main/4%20X%204%20X%204_MATRIX_Ardiuno%20nano%20project',
     features: ['64 individual LEDs', 'Custom animation patterns', 'Real-time control', 'Efficient multiplexing']
   }, {
     title: 'Car Showroom Sales System',
     description: 'Comprehensive C++ desktop application for managing car sales with modern UI and complete documentation.',
-    image: '/placeholder.svg',
+    image: carShowroomImg,
     technologies: ['C++', 'Qt', 'Database', 'OOP'],
     category: 'Software',
-    github: 'https://github.com/W-N-R/-Car-Showroom-Sales-System-C-',
+    github: 'https://github.com/WNR-Official/-Car-Showroom-Sales-System-C-',
     features: ['Inventory management', 'Sales tracking', 'Customer database', 'Financial reports']
   }, {
     title: 'Professional Logo Collection',
     description: 'Comprehensive branding and logo design portfolio showcasing various design styles and approaches.',
-    image: '/placeholder.svg',
+    image: logoCollectionImg,
     technologies: ['Illustrator', 'Photoshop', 'Branding', 'Typography'],
     category: 'Design',
-    github: '#',
+    github: 'https://github.com/WNR-Official/logo-portfolio',
     features: ['Vector graphics', 'Brand identity', 'Color theory', 'Typography mastery']
   }, {
     title: 'Responsive Web Projects',
     description: 'Collection of static websites built with HTML/CSS and hosted on GitHub Pages with modern design.',
-    image: '/placeholder.svg',
+    image: webProjectsImg,
     technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
     category: 'Web',
-    github: 'https://github.com/W-N-R/web-projects',
+    github: 'https://github.com/WNR-Official/web-projects',
     features: ['Mobile responsive', 'Modern CSS', 'Performance optimized', 'Cross-browser compatible']
   }, {
     title: 'Arduino Automation Hub',
     description: 'Smart home automation system using Arduino with sensor integration and mobile app control.',
-    image: '/placeholder.svg',
+    image: arduinoAutomationImg,
     technologies: ['Arduino', 'IoT', 'Sensors', 'Mobile App'],
     category: 'Hardware',
-    github: 'https://github.com/W-N-R/My-Electronics-Embedded-Systems-Project-Hub-',
+    github: 'https://github.com/WNR-Official/My-Electronics-Embedded-Systems-Project-Hub-',
     features: ['IoT connectivity', 'Sensor integration', 'Remote control', 'Data logging']
   }, {
     title: '3D Animation Showcase',
     description: 'Professional 3D animations and modeling projects created using Blender for various applications.',
-    image: '/placeholder.svg',
+    image: animationImg,
     technologies: ['Blender', '3D Modeling', 'Animation', 'Rendering'],
     category: 'Design',
-    github: '#',
+    github: 'https://github.com/WNR-Official/3d-animation-portfolio',
     features: ['Realistic rendering', 'Complex animations', '3D modeling', 'Visual effects']
   }];
   const categories = ['All', 'Hardware', 'Software', 'Web', 'Design'];
@@ -154,7 +160,7 @@ const Projects = () => {
 
         {/* GitHub CTA */}
         <div className="text-center mt-16">
-          <a href="https://github.com/W-N-R" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-lg font-semibold hover:from-gray-700 hover:to-gray-800 transition-all duration-300 transform hover:scale-105 border border-gray-700">
+          <a href="https://github.com/WNR-Official" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-lg font-semibold hover:from-gray-700 hover:to-gray-800 transition-all duration-300 transform hover:scale-105 border border-gray-700">
             <Github className="w-6 h-6" />
             <span>View All Projects on GitHub</span>
           </a>
