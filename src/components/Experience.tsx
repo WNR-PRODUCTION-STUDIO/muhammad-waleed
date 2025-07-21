@@ -77,7 +77,9 @@ const Experience = () => {
                       <MapPin className="w-4 h-4" />
                       <span>{exp.location}</span>
                     </div>
-                    <span className="px-3 py-1 bg-gray-800 rounded-full text-sm">{exp.type}</span>
+                    {exp.type !== 'Entrepreneurship' && (
+                      <span className="px-3 py-1 bg-gray-800 rounded-full text-sm">{exp.type}</span>
+                    )}
                   </div>
                 </div>
               </div>

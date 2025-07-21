@@ -9,8 +9,10 @@ const Skills = () => {
       icon: <Code className="w-8 h-8" />,
       color: 'from-blue-500 to-blue-600',
       skills: [
-        { name: 'C++', level: 90 },
+        { name: 'C++ (OOP Expert)', level: 90 },
+        { name: 'Object-Oriented Programming', level: 95 },
         { name: 'Arduino Programming', level: 85 },
+        { name: 'Python', level: 80 },
         { name: 'HTML/CSS', level: 80 },
         { name: 'JavaScript', level: 75 },
         { name: 'Git/GitHub', level: 85 }

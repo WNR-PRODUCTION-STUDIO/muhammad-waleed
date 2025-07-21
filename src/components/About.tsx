@@ -8,7 +8,7 @@ const About = () => {
       period: '2024 – Present',
       title: 'BSc Electrical Engineering',
       institution: 'FAST-NUCES',
-      description: 'Specializing in Computer Engineering with hands-on experience in Proteus, MATLAB, and Altium Designer.',
+      description: 'Specialized in Computer Engineering with hands-on experience in Proteus, MATLAB, and Altium Designer.',
       icon: <Code className="w-6 h-6" />
     },
     {
