@@ -91,7 +91,7 @@ const Hero = () => {
                 <div className="absolute inset-2 bg-gradient-to-br from-blue-500/10 to-green-500/10 rounded-full"></div>
                 
                 {/* Profile image */}
-                <img src="https://i.postimg.cc/jjQHTq2p/Black.png" alt="Muhammad Waleed - Founder of WNR Productions Studio" className="w-full h-full object-cover rounded-full relative z-10" />
+                <img src="/lovable-uploads/304c6c52-b7c1-432a-9a68-f765e99646e4.png" alt="Muhammad Waleed - Founder of WNR Productions Studio" className="w-full h-full object-cover rounded-full relative z-10" />
                 
                 {/* Highlight overlay for professional lighting */}
                 <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-white/10 to-transparent rounded-full"></div>
