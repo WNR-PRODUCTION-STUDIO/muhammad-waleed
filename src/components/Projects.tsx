@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import { Github, Settings, Code, Image, ArrowRight } from 'lucide-react';
-const wnrLogo = '/lovable-uploads/304c6c52-b7c1-432a-9a68-f765e99646e4.png';
+import ledCubeImg from '../assets/led-cube-project.jpg';
+import carShowroomImg from '../assets/car-showroom-system.jpg';
+import logoCollectionImg from '../assets/logo-collection.jpg';
+import webProjectsImg from '../assets/web-projects.jpg';
+import arduinoAutomationImg from '../assets/arduino-automation.jpg';
+import animationImg from '../assets/3d-animation.jpg';
 const Projects = () => {
   const [filter, setFilter] = useState('All');
   const projects = [{
     title: '4x4x4 LED Cube Display',
     description: 'Arduino Nano-based LED cube with multiplexing control, featuring dynamic light patterns and animations.',
-    image: wnrLogo,
+    image: ledCubeImg,
     technologies: ['Arduino', 'C++', 'Electronics', 'Multiplexing'],
     category: 'Hardware',
     github: 'https://github.com/WNR-Official/My-Electronics-Embedded-Systems-Project-Hub-/tree/main/4%20X%204%20X%204_MATRIX_Ardiuno%20nano%20project',
@@ -14,7 +19,7 @@ const Projects = () => {
   }, {
     title: 'Car Showroom Sales System',
     description: 'Comprehensive C++ desktop application for managing car sales with modern UI and complete documentation.',
-    image: wnrLogo,
+    image: carShowroomImg,
     technologies: ['C++', 'Qt', 'Database', 'OOP'],
     category: 'Software',
     github: 'https://github.com/WNR-Official/-Car-Showroom-Sales-System-C-',
@@ -22,7 +27,7 @@ const Projects = () => {
   }, {
     title: 'Professional Logo Collection',
     description: 'Comprehensive branding and logo design portfolio showcasing various design styles and approaches.',
-    image: wnrLogo,
+    image: logoCollectionImg,
     technologies: ['Illustrator', 'Photoshop', 'Branding', 'Typography'],
     category: 'Design',
     github: 'https://github.com/WNR-Official/logo-portfolio',
@@ -30,7 +35,7 @@ const Projects = () => {
   }, {
     title: 'Responsive Web Projects',
     description: 'Collection of static websites built with HTML/CSS and hosted on GitHub Pages with modern design.',
-    image: wnrLogo,
+    image: webProjectsImg,
     technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
     category: 'Web',
     github: 'https://github.com/WNR-Official/web-projects',
@@ -38,7 +43,7 @@ const Projects = () => {
   }, {
     title: 'Arduino Automation Hub',
     description: 'Smart home automation system using Arduino with sensor integration and mobile app control.',
-    image: wnrLogo,
+    image: arduinoAutomationImg,
     technologies: ['Arduino', 'IoT', 'Sensors', 'Mobile App'],
     category: 'Hardware',
     github: 'https://github.com/WNR-Official/My-Electronics-Embedded-Systems-Project-Hub-',
@@ -46,7 +51,7 @@ const Projects = () => {
   }, {
     title: '3D Animation Showcase',
     description: 'Professional 3D animations and modeling projects created using Blender for various applications.',
-    image: wnrLogo,
+    image: animationImg,
     technologies: ['Blender', '3D Modeling', 'Animation', 'Rendering'],
     category: 'Design',
     github: 'https://github.com/WNR-Official/3d-animation-portfolio',
